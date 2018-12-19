@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/login"
+    tools:context=".Activity.loginActivity">
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="160dp"
+        android:drawableLeft="@mipmap/login_icon_phone_n_xxhdpi"
+        android:ems="12"
+        android:hint="     手机号"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:id="@+id/ed_rphone"
+        />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ed_rphone"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/view_rphone"/>
+
+    <TextView
+        android:id="@+id/tv_regiser_huo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ed_rpass"
+        android:text="获取验证码"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/code_n_xxhdpi"
+        android:ems="12"
+        android:hint="     验证码"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:id="@+id/ed_rpass"
+        android:layout_below="@+id/view_rphone"
+
+        />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ed_rpass"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/view_rpass"/>
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/login_icon_lock_n_xxhdpi"
+        android:ems="12"
+        android:hint="     登录密码"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:id="@+id/ed_yan"
+        android:layout_below="@+id/view_rpass"
+        android:drawableRight="@mipmap/login_icon_eye_n_xxhdpi"
+        />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/ed_yan"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/view_ryan"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="345dp"
+        android:layout_below="@+id/view_ryan"
+        android:text="已有注册？继续登录"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/tv_regiser"/>
+    <Button
+        android:id="@+id/bt_regiser"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/view_rpass"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/view_rpass"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/shape"
+        android:text="注册"
+        android:textColor="#ff5f71"
+        android:textSize="18sp" />
+
+</RelativeLayout>

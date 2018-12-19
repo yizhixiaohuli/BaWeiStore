@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context="com.example.baweistore.Fragment.HomeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/rbt_my_circle"
+        />
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_home"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="富士康接电话弗兰克水电费看见后视镜的好时机发送到缴费基数弹尽粮绝速度快放假来得及案件来看"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:textColor="#666666"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_my_circle_message"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fresco_my_circle_tua"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fresco_my_circle_tub"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-9-10"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/my_circle_date"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/common_btn_prise_n_xxhdpi"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="260dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/img_my_circle_prise"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="421"
+                android:textColor="#666666"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_my_circle_prise"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

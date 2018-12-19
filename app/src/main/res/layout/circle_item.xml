@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context="com.example.baweistore.Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_home"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fresco_circle_tou"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        android:layout_marginLeft="10dp"
+        fresco:roundAsCircle="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小白兔"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:textColor="#666666"
+        android:id="@+id/tv_circle_name"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-9-10"
+        android:layout_gravity="center"
+        android:layout_marginLeft="270dp"
+        android:textColor="#666666"
+        android:id="@+id/tv_circle_date"
+        android:textSize="10sp"/>
+</LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="富士康接电话弗兰克水电费看见后视镜的好时机发送到缴费基数弹尽粮绝速度快放假来得及案件来看"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:textColor="#666666"
+            android:id="@+id/tv_circle_message"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_circle_tua"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_circle_tub"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/common_btn_prise_n_xxhdpi"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="430dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/img_circle_prise"
+                android:button="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="421"
+                android:textColor="#666666"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_circle_prise"/>
+        </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

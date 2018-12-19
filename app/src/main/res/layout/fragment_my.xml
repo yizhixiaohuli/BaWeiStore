@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mybitmap"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/shape_home_my"
+            android:layout_marginTop="250dp">
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_my_tou"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@mipmap/bitmap_copy"
+            />
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fresco_my_tou"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_my_name"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mine_layout_Information"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@mipmap/my_icon_information_n_hdpi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="个人资料"
+                    android:textSize="14sp"
+                    android:textColor="#797878"
+                    android:id="@+id/tv_my_information"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#ededed">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_layout_Circle"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@mipmap/my_icon_circle_n_hdpi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="我的圈子"
+                    android:textColor="#797878"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_my_circle"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#ededed">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_layout_Footprint"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@mipmap/my_icon_foot_n_hdpi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="我的足迹"
+                    android:textColor="#797878"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_my_foot"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#ededed">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_layout_Wallet"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@mipmap/my_icon_wallet_n_hdpi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="我的钱包"
+                    android:textColor="#797878"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_my_wallet"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#ededed">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_layout_Address"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@mipmap/my_icon_address_n_hdpi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="我的收货地址"
+                    android:textColor="#797878"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_my_address"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#ededed">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

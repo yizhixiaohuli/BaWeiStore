@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/fragment_order_fourrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_home"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+
+        >
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_order_indent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部订单"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/common_icon_all_list_n_xxhdpi"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_marginBottom="10dp"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_order_expressage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代付款"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/common_icon_pay_n_xxhdpi"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_marginBottom="10dp"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_order_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收货"
+            android:gravity="center"
+            android:drawableTop="@mipmap/common_icon_receive_n_xxhdpi"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginBottom="10dp"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_order_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待评价"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/commom_icon_comment_n_xxhdpi"
+            android:button="@null"
+            android:layout_marginBottom="10dp"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_order_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/common_icon_finish_n_xhdpi"
+            android:button="@null"
+            android:layout_marginBottom="10dp"/>
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_order_fourpager"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.baweistore.Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_home"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fresco_home_mo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shape_home_fresco"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:roundedCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好好不时代峻峰老师教大连市附近"
+            android:layout_marginTop="20dp"
+            android:textColor="#999797"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_home_mo_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥99"
+            android:textColor="#e61010"
+            android:id="@+id/tv_home_mo_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.baweistore.Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_home"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:text="小白兔"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_address_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="5dp"
+
+                android:text="15600716026"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="富士康接电话弗兰克水电费看见后视镜的好时机发送到缴费基数弹尽粮绝速度快放假来得及案件来看"
+            android:textColor="#666666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cac7c7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"></RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置默认地址"
+                android:textColor="#666666"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/radio_my_address"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_address"
+                android:text="修改"
+                android:textColor="#666666"
+                android:layout_marginLeft="250dp"
+                android:textSize="10sp"
+                android:id="@+id/bt_my_address_xiu"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_address"
+                android:text="删除"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:id="@+id/bt_my_address_shan"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

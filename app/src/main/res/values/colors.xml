@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#EB3F3B</color>
+    <color name="red">#DA2C15</color>
+    <color name="red1">#DD403B</color>
+    <color name="hui">#FF331515</color>
+    <color name="hui1">#5B5B5B</color>
+    <color name="hui2">#B5B4B4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="ceng">#DD403B</color>
+
+    <color name="hui_yijian01">#746464</color>
+
+    <color name="ceng1">#FF9000</color>
+    <color name="black1">#3A3A3A</color>
+    <color name="colorPrimaryNight">#263238</color>
+    <color name="colorPrimaryDarkNight">#1E282D</color>
+    <color name="colorAccentNight">#73432A</color>
+
+    <color name="dayBackground">#F2F4F7</color>
+    <color name="dayTextColor">#000</color>
+    <color name="dayItemBackground">#fff</color>
+
+    <color name="nightItemBackground">#37474F</color>
+    <color name="nightBackground">#263238</color>
+    <color name="nightTextColor">#fff</color>
+    //白黑
+    <color name="set_title_white">#ef3919</color>
+    <color name="set_title_black">#792929</color>
+
+
+</resources>

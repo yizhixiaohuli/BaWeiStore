@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.baweistore.Fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_home"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_home"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/shape_home_fresco"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            fresco:roundedCornerRadius="20dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好好不时代峻峰老师教大连市附近"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#999797"
+            android:id="@+id/tv_home_title"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥99"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#e61010"
+                android:id="@+id/tv_home_price"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已售67件"
+                android:layout_gravity="center"
+                android:textColor="#999797"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/tv_home_num"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

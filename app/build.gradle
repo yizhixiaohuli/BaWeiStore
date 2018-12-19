@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.mob.sdk'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.baweistore"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+MobSDK {
+    appKey "2955ce51619b1"
+    appSecret "acb561a72f26822fae0a04ba2a8b207e"
+
+    SMSSDK {}
+}
+greendao {
+    schemaVersion 1//数据库版本号
+    daoPackage 'com.demo.ggy.Dao'//设置DaoMaster、DaoSession、Dao包名，，这里设置的是
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jcodecraeer:xrecyclerview:1.2.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.facebook.fresco:fresco:0.14.1'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.recker.flybanner:flybanner:1.3'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'liji.library.dev:citypickerview:1.1.0'
+
+    //swipelayout侧滑
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //swipelayout动画效果相关
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //点赞
+    compile 'com.zhuang:likeview:2.1'
+    implementation 'skin.support:skin-support:3.1.1'                   // skin-support 基础控件支持
+    implementation 'skin.support:skin-support-design:3.1.1'            // skin-support-design material design 控件支持[可选]
+    implementation 'skin.support:skin-support-cardview:3.1.1'          // skin-support-cardview CardView 控件支持[可选]
+    implementation 'skin.support:skin-support-constraint-layout:3.1.1' // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+
+}

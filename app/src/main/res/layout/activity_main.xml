@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawlayout"
+    tools:context="com.example.baweistore.Activity.MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9"
+    android:id="@+id/pager">
+
+</android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/rectangle"
+        android:orientation="horizontal"
+        android:id="@+id/linear">
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/common_tab_btn_home_s_xxhdpi"
+            />
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/common_tab_btn_circle_n_xxhdpi"
+            />
+        <ImageView
+            android:id="@+id/iv_shopcar"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/commom_tab_btn_shoppingcart_n_xxhdpi"
+            />
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/common_tab_btn_list_n_xxhdi"
+            />
+        <ImageView
+            android:id="@+id/iv_my"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/common_tab_btn_my_n_xxhdpi"
+            />
+    </RadioGroup>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:clickable="false"
+        android:background="#11eca7"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout">
+        <include layout="@layout/drawlayout"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
